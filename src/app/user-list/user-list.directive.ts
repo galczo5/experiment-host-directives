@@ -5,7 +5,10 @@ import {UsersService} from "./users.service";
 
 @Directive({
   selector: '[appUserList]',
-  standalone: true
+  standalone: true,
+  providers: [
+    UserListService
+  ]
 })
 export class UserListDirective implements OnChanges, OnDestroy {
 

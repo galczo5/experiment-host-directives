@@ -18,9 +18,6 @@ import {UserListDirective} from "./user-list.directive";
       directive: UserListDirective,
       inputs: ['filterValue']
     }
-  ],
-  providers: [
-    UserListService
   ]
 })
 export class UserListComponent {
